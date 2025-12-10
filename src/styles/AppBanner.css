@@ -1,0 +1,157 @@
+
+.app-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #FFF7E2; 
+  gap: 40px;
+  border: 1px solid #DCD8CD;
+}
+
+.app-left {
+  width: 50%;
+}
+
+.app-left h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #2f4f29;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555;
+  max-width: 460px;
+  margin-bottom: 35px;
+}
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 22px;
+  margin-bottom: 35px;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  background: #FFF7E2;
+  border-radius: 12px;
+  border: 1px solid #E0E0E0;
+  width: 240px;
+}
+
+.feature-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #37472f;
+  line-height: 20px;
+}
+
+
+.store-btns {
+  display: flex;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.store-btns img {
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.store-btns img:hover {
+  transform: scale(1.04);
+}
+
+
+.app-right {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-img {
+  width: 330px;
+  z-index: 3;
+}
+
+.engage-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  z-index: 2;
+}
+
+.user-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  width: 150px;
+  z-index: 2;
+}
+
+
+@media (max-width: 900px) {
+  .app-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .app-left, 
+  .app-right {
+    width: 100%;
+  }
+
+  .features-grid {
+    justify-content: center;
+    
+   
+;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 280px;
+    margin: auto;
+  }
+
+  .app-right {
+    margin-top: 40px;
+  }
+
+  .phone-img {
+    width: 260px;
+  }
+
+  .engage-card {
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+  }
+
+  .user-badge {
+    width: 130px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+}
